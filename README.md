@@ -80,3 +80,26 @@ To train this model there are some better algorithms than others, however since 
 * **SVR:** The model produced by support vector classification (as described above) depends only on a subset of the training data, because the cost function for building the model does not care about training points that lie beyond the margin. Analogously, the model produced by Support Vector Regression depends only on a subset of the training data, because the cost function ignores samples whose prediction is close to their target.
 * **arima:** ‘Auto Regressive Integrated Moving Average’ is actually a class of models that ‘explains’ a given time series based on its own past values, that is, its own lags and the lagged forecast errors, so that equation can be used to forecast future values.
 * **RNN:** recurrent neural network (RNN) is a class of artificial neural networks where connections between nodes form a directed graph along a temporal sequence. ... Derived from feedforward neural networks, RNNs can use their internal state (memory) to process variable length sequences of inputs.
+
+## Conclusions
+R2-score in test set: 
+* ScaledLR : 0.85492
+* ScaledLASSO: 0.85501
+* ScaledEN: 0.80315
+* ScaledGBMR: 0.78462
+* ScaledCART: 0.68208
+* ScaledGBO: 0.81525
+* ScaledXGBR: 0.79058
+* ScaledKNN: 0.78632
+* SaledSVM: 0.84633
+
+* LGBMRegressor: 0.9405
+* Deep Neural Network: 0.9119
+* Arima (Predict 3-hours-ahead): 0.912
+
+The best results are provided using LGMBregressor and Neural Networks. 
+
+## Futher Improvements
+* Use historical data with exogenous input to predict 3-hours ahead.
+* Use wavelet trasnform to decompose the input signal in differnt frequencies.
+* Try more complex deep-learning architectures like as LSTM, ConvLSTM, autoencoders, GANs. 
