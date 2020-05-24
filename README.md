@@ -51,3 +51,7 @@ Regardless of the features provided in the dataset, we can create others:
 **suitable wind speed:** Wind turbines start operating when the wind reaches a speed of 3 to 4 meters per second, and reaches maximum electricity production with a wind of about 13 to 14 meters per second. If the wind is very strong, for example 25 meters per second as average speed for 10 minutes, the wind turbines stop for safety reasons.
 
 **loss:** difference between the Teorical Powercurve and ActivePower.
+
+**efficient use hours:** hours of use with efficient wind.
+
+
