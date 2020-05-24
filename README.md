@@ -38,9 +38,16 @@ It should be noted that they do not provide us with some relevant data, such as:
 * **sklearn:** is a free machine learning library for Python. It features various algorithms like support vector machine, random forests, and k-neighbours, and it also supports Python numerical and scientific libraries like NumPy and SciPy .
 * **xgboost:** open source library providing a hight-performance implementation of gradient boosted decision trees.
 * **lightgbm:** is a gradient enhancement framework that uses a tree-based learning algorithm. Light GBM grows tree vertically while another algorithm grows tree horizontally, which means that Light GBM grows tree in leaf form while another algorithm grows in level. It will choose the leaf with the maximum delta loss to grow. By growing the same leaf, the smart leaf algorithm can reduce more losses than a smart level algorithm.
+* **tensorflow:** It is an open source artificial intelligence library, using data flow graphs to build models. It allows developers to create large-scale neural networks with many layers. TensorFlow is mainly used for: Classification, Perception, Understanding, Discovering, Prediction and Creation.
 
 * **matplotlib:** A Python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms. 
 * **seaborn:** statistical data visualization. Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics. For a brief introduction to the ideas behind the library, you can read the introductory notes.
 * **windrose:** graphic tool used by meteorologists to give a succinct view of how wind speed and direction are typically distributed at a particular location. It can also be used to describe air quality pollution sources.
 
 
+## Features
+Regardless of the features provided in the dataset, we can create others:
+
+**suitable wind speed:** Wind turbines start operating when the wind reaches a speed of 3 to 4 meters per second, and reaches maximum electricity production with a wind of about 13 to 14 meters per second. If the wind is very strong, for example 25 meters per second as average speed for 10 minutes, the wind turbines stop for safety reasons.
+
+**loss:** difference between the Teorical Powercurve and ActivePower.
