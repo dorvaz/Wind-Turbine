@@ -63,34 +63,36 @@ We have not used them to make the predictions since they are highly correlated w
 
 To train this model there are some better algorithms than others, however since the amount of data is reduced we have used a lot of them to make the predictions, mainly based on trees and gradient decreasing:
 
-**LinearRegression:**
+**LinearRegression:** fits a linear model with coefficients w = (w1, …, wp) to minimize the residual sum of squares between the observed targets in the dataset, and the targets predicted by the linear approximation.
 
-**ElasticNet:**
+**ElasticNet:** Linear regression with combined L1 and L2 priors as regularizer.
 
-**Lasso:**
+**Lasso:** Technically the Lasso model is optimizing the same objective function as the Elastic Net with l1_ratio=1.0
 
-**BayesianRidge:**
+**BayesianRidge:** Bayesian regression techniques can be used to include regularization parameters in the estimation procedure: the regularization parameter is not set in a hard sense but tuned to the data at hand.
 
-**LassoLarsIC:**
+**LassoLarsIC:** regression algorithm for high-dimensional data, developed by Bradley Efron, Trevor Hastie, Iain Johnstone and Robert Tibshirani. LARS is similar to forward stepwise regression. At each step, it finds the feature most correlated with the target. When there are multiple features having equal correlation, instead of continuing along the same feature, it proceeds in a direction equiangular between the features.
 
-**RandomForestRegressor:**
+**RandomForestRegressor:** A random forest is a meta estimator that fits a number of classifying decision trees on various sub-samples of the dataset and uses averaging to improve the predictive accuracy and control over-fitting. The sub-sample size is controlled with the max_samples parameter if bootstrap=True (default), otherwise the whole dataset is used to build each tree.
 
-**GradientBoostingRegressor:**
+**GradientBoostingRegressor:** Gradient Tree Boosting or Gradient Boosted Decision Trees (GBDT) is a generalization of boosting to arbitrary differentiable loss functions. GBDT is an accurate and effective off-the-shelf procedure that can be used for both regression and classification problems in a variety of areas including Web search ranking and ecology.
 
-**ExtraTreesRegressor:**
+**ExtraTreesRegressor:** randomness goes one step further in the way splits are computed. As in random forests, a random subset of candidate features is used, but instead of looking for the most discriminative thresholds, thresholds are drawn at random for each candidate feature and the best of these randomly-generated thresholds is picked as the splitting rule.
 
-**KernelRidge:**
+**KernelRidge:** Kernel ridge regression (KRR) [M2012] combines Ridge regression and classification (linear least squares with l2-norm regularization) with the kernel trick. It thus learns a linear function in the space induced by the respective kernel and the data. For non-linear kernels, this corresponds to a non-linear function in the original space.
 
-**DecisionTreeRegressor:**
+The form of the model learned by KernelRidge is identical to support vector regression (SVR). However, different loss functions are used: KRR uses squared error loss while support vector regression uses -insensitive loss, both combined with l2 regularization. In contrast to SVR, fitting KernelRidge can be done in closed-form and is typically faster for medium-sized datasets. On the other hand, the learned model is non-sparse and thus slower than SVR, which learns a sparse model for , at prediction-time.
 
-**KNeighborsRegressor:**
+**DecisionTreeRegressor:** are a non-parametric supervised learning method used for classification and regression. The goal is to create a model that predicts the value of a target variable by learning simple decision rules inferred from the data features.
 
-**XGBRegressor:**
+**KNeighborsRegressor:** Neighbors-based regression can be used in cases where the data labels are continuous rather than discrete variables. The label assigned to a query point is computed based on the mean of the labels of its nearest neighbors.
 
-**LGBMRegressor:**
+**XGBRegressor:**  is a decision-tree-based ensemble Machine Learning algorithm that uses a gradient boosting framework. In prediction problems involving unstructured data (images, text, etc.) ... A wide range of applications: Can be used to solve regression, classification, ranking, and user-defined prediction problems
 
-**SVR:**
+**LGBMRegressor:** machine Learning is the fastest growing field in the world. Everyday there will be a launch of bunch of new algorithms, some of those fails and some achieve the peak of success. Today, I am touching one of the most successful machine learning algorithm, Light GBM.
 
-**arima:**
+**SVR:** The model produced by support vector classification (as described above) depends only on a subset of the training data, because the cost function for building the model does not care about training points that lie beyond the margin. Analogously, the model produced by Support Vector Regression depends only on a subset of the training data, because the cost function ignores samples whose prediction is close to their target.
 
-**RNN:**
+**arima:** ‘Auto Regressive Integrated Moving Average’ is actually a class of models that ‘explains’ a given time series based on its own past values, that is, its own lags and the lagged forecast errors, so that equation can be used to forecast future values.
+
+**RNN:** recurrent neural network (RNN) is a class of artificial neural networks where connections between nodes form a directed graph along a temporal sequence. ... Derived from feedforward neural networks, RNNs can use their internal state (memory) to process variable length sequences of inputs.
