@@ -64,18 +64,33 @@ We have not used them to make the predictions since they are highly correlated w
 To train this model there are some better algorithms than others, however since the amount of data is reduced we have used a lot of them to make the predictions, mainly based on trees and gradient decreasing:
 
 **LinearRegression:**
+
 **ElasticNet:**
+
 **Lasso:**
+
 **BayesianRidge:**
+
 **LassoLarsIC:**
+
 **RandomForestRegressor:**
+
 **GradientBoostingRegressor:**
+
 **ExtraTreesRegressor:**
+
 **KernelRidge:**
+
 **DecisionTreeRegressor:**
+
 **KNeighborsRegressor:**
+
 **XGBRegressor:**
+
 **LGBMRegressor:**
+
 **SVR:**
 
+**arima:**
 
+**RNN:**
