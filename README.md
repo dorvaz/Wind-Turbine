@@ -54,4 +54,28 @@ Regardless of the features provided in the dataset, we can create others:
 
 **efficient use hours:** hours of use with efficient wind.
 
+We have only used these columns to illustrate the operation and behaviour of wind turbines.
+
+We have not used them to make the predictions since they are highly correlated with those provided in the dataset: they are linear representations of the previous ones.
+
+
+## Algorithms
+
+To train this model there are some better algorithms than others, however since the amount of data is reduced we have used a lot of them to make the predictions, mainly based on trees and gradient decreasing:
+
+**LinearRegression:**
+**ElasticNet:**
+**Lasso:**
+**BayesianRidge:**
+**LassoLarsIC:**
+**RandomForestRegressor:**
+**GradientBoostingRegressor:**
+**ExtraTreesRegressor:**
+**KernelRidge:**
+**DecisionTreeRegressor:**
+**KNeighborsRegressor:**
+**XGBRegressor:**
+**LGBMRegressor:**
+**SVR:**
+
 
