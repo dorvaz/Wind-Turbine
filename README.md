@@ -2,7 +2,9 @@
 Wind Turbine Production Prediction
 
 Dorado Vazquez, Jose Maria
+
 MLND capstone project
+
 June 2020
 
 
