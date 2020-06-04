@@ -1,6 +1,16 @@
 # Wind-Turbine
 Wind Turbine Production Prediction
-https://www.kaggle.com/berkerisen/wind-turbine-scada-dataset
+
+Dorado Vazquez, Jose Maria
+MLND capstone project
+June 2020
+
+
+Link to proposal review: https://review.udacity.com/#!/reviews/2313697
+
+## Data Source
+
+Kaggle competion: https://www.kaggle.com/berkerisen/wind-turbine-scada-dataset
 
 ## Context
 
